@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #6e4f34; /* змінив колір фону */
+    color: #ffffff; /* весь текст білий */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+}
+
+header {
+    background-color: #4d6a4d; /* змінив колір фону хедеру */
+    padding: 40px 0;
+}
+
+.logo {
+    font-size: 52px;
+    font-weight: bold;
+    color: #ffffff; /* зробив логотип білим */
+    letter-spacing: 3px;
+    
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.content {
+    overflow: hidden;
+    margin: 30px 0;
+}
+
+.block {
+    background-color: #3b4c3b; /* змінив колір блоку */
+    border: 2px solid #9a3c25; /* змінив колір обводки */
+    border-radius: 12px;
+    padding: 20px;
+    width: 40%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+    float: left;
+    margin: 15px;
+}
+
+.block:hover {
+    transform: scale(1.03);
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.text-block h2 {
+    font-size: 28px;
+    color: #ffffff; /* зробив заголовок білим */
+    margin-bottom: 15px;
+}
+
+.text-block p {
+    font-size: 16px;
+    color: #ffffff; /* зробив текст білим */
+}
+
+.subscribe {
+    clear: both;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.email-input {
+    padding: 12px;
+    width: 70%;
+    border: 1px solid #9a3c25; /* змінив колір рамки */
+    border-radius: 6px;
+    background-color: #4d6a4d; /* змінив колір фону */
+    color: #ffffff; /* зробив текст білим */
+}
+
+.subscribe-button {
+    padding: 12px 20px;
+    background-color: #5c3a1e; /* змінив колір кнопки */
+    border: none;
+    border-radius: 6px;
+    color: #ffffff; /* зробив текст білим */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe-button:hover {
+    background-color: #9a3c25; /* змінив колір кнопки при наведенні */
+}
+
+footer {
+    background-color: #4d6a4d; /* змінив колір фону футера */
+    padding: 15px;
+    color: #ffffff; /* зробив текст білим */
+    font-size: 14px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+.footer-links a {
+    color: #ffffff; /* зробив посилання білими */
+    text-decoration: none;
+    font-style: italic;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #9a3c25; /* змінив колір посилань при наведенні */
+}
+
+@media (max-width: 768px) {
+    .block {
+        width: 80%;
+        float: none;
+    }
+}
